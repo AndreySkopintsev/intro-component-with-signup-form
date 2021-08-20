@@ -76,6 +76,10 @@ form{
     min-height: 380px;
 }
 
+.input-box{
+    position: relative;
+}
+
 input{
     height: 60px;
     width: 100%;
@@ -114,6 +118,39 @@ a{
     font-weight: 600;
 }
 
+/* Error message */
+
+.error-message{
+    display: none;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+    padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.error>p,.error>.fas{
+    display: block;
+    border: none;
+    color: hsl(0, 100%, 74%);
+}
+
+.error>input{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.fas{
+    display: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
 @media (min-width:740px){
     body{
         display: flex;
@@ -129,7 +166,7 @@ a{
     }
 
     .form{
-        height: 500px;
+        height: 550px;
         align-items: center;
     }
 
