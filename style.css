@@ -13,6 +13,13 @@ body{
     padding: 70px 0;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 355px;
+}
+
 section.text{
     display: flex;
     flex-direction: column;
@@ -20,8 +27,44 @@ section.text{
     align-items: center;
     margin-bottom: 50px;
     color: #fff;
-    max-width: 355px;
+    max-width: 330px;
     min-height: 250px;
     padding: 5px;
     text-align: center;
 }
+
+section.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.tryout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    min-width: 320px;
+    min-height: 80px;
+    background: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+span{
+    font-weight: 600;
+}
+
+article{
+    background: #fff;
+    margin-top: 30px;
+    max-width: 320px;
+    min-height: 500px;
+}
+
+form{
+    max-width: 320px;
+}
+
+
