@@ -84,6 +84,11 @@ input{
     border-radius: 5px;
 }
 
+input:focus{
+    border: 2px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+
 button[type=submit]{
     width: 100%;
     height: 60px;
