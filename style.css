@@ -51,6 +51,7 @@ p.tryout{
     background: hsl(248, 32%, 49%);
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 5px 0 rgba(20, 20, 20, 0.3);
 }
 
 span{
@@ -64,6 +65,7 @@ article{
     max-width: 320px;
     min-height: 450px;
     border-radius: 10px;
+    box-shadow: 0 5px 0 rgba(20, 20, 20, 0.3);
 }
 
 form{
@@ -112,4 +114,37 @@ a{
     font-weight: 600;
 }
 
+@media (min-width:740px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('./images/bg-intro-mobile.png'),hsl(0, 100%, 74%);
+    }
+    .container{
+        flex-direction: row;
+        justify-content: space-around;
+        min-width: 1200px;
+        max-height: 500px;
+    }
 
+    .form{
+        height: 500px;
+        align-items: center;
+    }
+
+    form{
+        max-width: 500px;
+    }
+
+    p.tryout{
+        width: 500px;
+        min-height: 50px;
+
+    }
+
+    article{
+        margin-top: 10px;
+        min-width: 500px;
+    }
+}
