@@ -78,6 +78,7 @@ form{
 
 .input-box{
     position: relative;
+    margin-bottom: 15px;
 }
 
 input{
@@ -96,6 +97,7 @@ input:focus{
 }
 
 button[type=submit]{
+    cursor: pointer;
     width: 100%;
     height: 60px;
     background: hsl(154, 59%, 51%);
@@ -103,6 +105,15 @@ button[type=submit]{
     border-radius: 5px;
     color: #fff;
     font-weight: 600;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+button.error{
+    cursor: not-allowed;
+    background: hsl(154, 59%, 70%);
 }
 
 p.disclaimer{
@@ -119,6 +130,10 @@ a{
 }
 
 /* Error message */
+
+.input-box.error{
+    margin-bottom: 0;
+}
 
 .error-message{
     display: none;
@@ -139,6 +154,11 @@ a{
 
 .error>input{
     border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+.error>input::placeholder{
+    color: hsl(0, 100%, 74%);
 }
 
 .fas{

@@ -22,25 +22,25 @@
         <form action="">
           <div class="input-box">
             <i class="fas fa-exclamation-circle"></i>
-            <input type="text" placeholder="First Name">
+            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" placeholder="First Name">
             <p class="error-message">First Name cannot be empty</p>
           </div>
           <div class="input-box">
             <i class="fas fa-exclamation-circle"></i>
-            <input type="text" placeholder="Last Name">
+            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" type="text" placeholder="Last Name">
             <p class="error-message">Last Name cannot be empty</p>
           </div>
           <div class="input-box">
             <i class="fas fa-exclamation-circle"></i>
-            <input class="error" type="email" placeholder="Email">
+            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" type="email" placeholder="Email">
             <p class="error-message">Email cannot be empty</p>
           </div>
           <div class="input-box">
             <i class="fas fa-exclamation-circle"></i>
-            <input class="error" type="password" placeholder="Password">
+            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"  type="password" placeholder="Password">
             <p class="error-message">Password cannot be empty</p>
           </div>
-          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+          <button id="submitBtn" type="submit">CLAIM YOUR FREE TRIAL</button>
         </form>
         <p class="disclaimer">
           By clicking the button, you are agreeing to our <a href="#">Terms and Conditions</a>
